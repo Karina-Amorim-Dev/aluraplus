@@ -31,8 +31,11 @@ body {
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, 1fr);
+    /* REMOVA height: 100vh; */
+    min-height: 100vh;
 }
+
 
 .container__botao {
     background-color: var(--botao-azul);
@@ -152,4 +155,69 @@ body {
 .container__botao:hover {
     background-color: var(--botao-azul-efeito);
     color: var(--cor-de-fundo);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .container__caixa {
+        margin: 2em;
+    }
+
+    .principal {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .secundario {
+        margin: 2em;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .secundario__imagem {
+        width: 100%;
+    }
+
+    .container__descricao {
+        padding: 1em;
+    }
+
+    .descricao__titulo {
+        font-size: 28px;
+    }
+
+    .descricao__texto {
+        font-size: 14px;
+    }
+
+    .dispositivos__lista {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .lista__item {
+        font-size: 24px;
+    }
+
+    .rodape__lista {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .container__titulo {
+        font-size: 22px;
+    }
 }

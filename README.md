@@ -43,7 +43,7 @@ Foram utilizadas **media queries** para garantir uma boa experiência em telas m
 
 (Adicione aqui um print do seu projeto depois 👇)
 
-![Preview do projeto](./img/preview.png)
+![Preview do projeto](img/preview.png)
 
 ---
 
